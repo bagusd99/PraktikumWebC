@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 4 Form</title>
+</head>
+<body style="text-align: center; margin-top: 10%;">
+	<form style="display: inline-block;" action="">
+		<table>
+			<tr style="height: 30px;">
+				<td>Username</td>
+				<td>:</td>
+				<td><input style="width: 140px;" type="text" id="username" name="username" placeholder="Username"></td>
+            </tr>
+            
+			<tr style="height: 30px;">
+				<td>Password</td>
+				<td>:</td>
+				<td><input style="width: 140px;" type="password" name="password" id="password" placeholder="Password"></td>
+            </tr>
+            
+			<tr style="height: 30px;">
+				<td>Gender</td>
+				<td>:</td>
+				<td style="text-align: center"><input type="radio" id="male" name="jk" value="male"> <label for="male">Male</label>
+                    <input type="radio" name="jk" id="female" value="female"> <label for="female">Female</label></td>
+            </tr>
+            
+			<tr style="height: 30px;">
+				<td>Hobby</td>
+				<td>:</td>
+				<td style="text-align: center"><input type="checkbox" id="coding" name="hobi" value="coding"> <label for="coding">Coding</label>
+                <input type="checkbox" id="design" name="hobi" value="design"> <label for="design">Design</label></td>
+            </tr>
+            
+			<tr style="height: 30px;">
+				<td>Combo Box</td>
+				<td>:</td>
+				<td style="text-align: center">
+					<select name="pulau" id="pulau">
+						<option value="bali">Bali</option>
+                        <option value="jawa">Jawa</option>
+                        <option value="sumatra">Sumatra</option>
+                        <option value="kalimantan">Kalimantan</option>
+					</select>
+				</td>
+            </tr>
+            
+			<tr style="height: 30px;">
+				<td>Textarea</td>
+				<td>:</td>
+				<td><textarea rows="5" cols="30"></textarea></td>
+            </tr>
+            
+			<tr style="height: 30px">
+				<td colspan="3" style="text-align: center">
+					<input type="submit" value="Submit" style="display: inline-block; background-color:rgb(250, 128, 144); border-radius: 10px; color: white; padding: 3px 15px">
+				</td>
+            </tr>
+            
+		</table>
+    </form>
+    
+</body>
+</html>
