@@ -104,10 +104,10 @@ $queryKelas = mysqli_query($koneksi, "SELECT * FROM kelas INNER JOIN dosen ON ke
                                                     <?php if($role == "2" || $role == "1") { ?>
                                                     <th>Aksi</th>
                                                     <?php } ?>
-                                                    <th class="col-sm-3">Nama Kelas</th>
-                                                    <th class="col-sm-2">Nama Dosen</th>
-                                                    <th class="col-sm-2">Jam Kuliah</th>
-                                                    <th class="col-sm-2">Kuota Kelas</th>
+                                                    <th >Nama Kelas</th>
+                                                    <th >Nama Dosen</th>
+                                                    <th >Jam Kuliah</th>
+                                                    <th>Kuota Kelas</th>
                                                     <th>Status</th>
                                                 </tr>
                                             </thead>

@@ -58,12 +58,15 @@ include 'function.php';
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia repellendus dolorem amet aliquid dignissimos unde, dolor quasi recusandae ex nesciunt quisquam obcaecati vitae deserunt sequi iste ut ducimus tempore. Tempora.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatibus doloribus quaerat. Quo non consequatur, nihil dignissimos quos eaque ipsum quaerat accusamus error dolores? Neque vitae ipsa laborum nesciunt sit.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi pariatur eum nostrum omnis velit itaque odio, vero aliquid dolor laudantium impedit amet cumque ipsum sed. Nesciunt facere voluptate voluptatum labore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia repellendus dolorem amet aliquid dignissimos unde, dolor quasi recusandae ex nesciunt quisquam obcaecati vitae deserunt sequi iste ut ducimus tempore. Tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatibus doloribus quaerat. Quo non consequatur, nihil dignissimos quos eaque ipsum quaerat accusamus error dolores? Neque vitae ipsa laborum nesciunt sit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi pariatur eum nostrum omnis velit itaque odio, vero aliquid dolor laudantium impedit amet cumque ipsum sed. Nesciunt facere voluptate voluptatum labore.</p>
         <h2 style="color: black; clear: both;">Berita Lainnya</h2>
-        <img src="gambar/1.jpg" alt="foto"
-            style="width: 250px; float: left; margin-right: 25px; margin-bottom: 35px;">
-        <img src="gambar/2.jpg" alt="foto"
-            style="width: 250px; float: left; margin-right: 25px; margin-bottom: 35px;">
         <img src="gambar/4.jpg" alt="foto"
+            style="width: 250px; float: left; margin-right: 25px; margin-bottom: 35px;">
+            <img src="gambar/4.jpg" alt="foto"
+            style="width: 250px; float: left; margin-right: 25px; margin-bottom: 35px;">
+            <img src="gambar/4.jpg" alt="foto"
             style="width: 250px; float: left; margin-right: 25px; margin-bottom: 35px;">
       </div>
     </section>

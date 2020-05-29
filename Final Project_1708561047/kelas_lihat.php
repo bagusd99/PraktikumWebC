@@ -106,9 +106,9 @@ $kelas = mysqli_query($koneksi, "SELECT nama_kelas FROM kelas WHERE id_kelas = '
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th class="col-sm-1">No</th>
-                                                <th class="col-sm-4">NIM</th>
-                                                <th class="col-sm-4">Nama Mahasiswa</th>
+                                                <th>No</th>
+                                                <th>NIM</th>
+                                                <th>Nama Mahasiswa</th>
                                             </tr>
                                         </thead>
                                         <?php $i=1; ?>

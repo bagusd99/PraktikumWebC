@@ -17,7 +17,6 @@
 
 
 .navbar-brand {
-  font-family: 'viga'; 
   font-size: 24px;
 }
 
@@ -27,29 +26,12 @@
 }
 
 
-
-
-
-
-
 .content {
   padding: 20px 80px;
   text-align: justify;
 }
 
 
-.card{
-  width: 40%;
-  margin-right: auto;
-  margin-left: auto;
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-}
 
 .content p {
   font-size: 20px;
@@ -83,35 +65,7 @@
 }
 
 
-.card{
-  padding-top: 20px;
-  margin-top: 120px;
-  width: 500px;
-  height: 400px;
-}
-
-#cardRegis{
-  padding-top: 20px;
-  margin-top: 10px;
-  width: 500px;
-  height: 700px;
-}
-
-#cardRegis1{
-  padding-top: 20px;
-  margin-top: 10px;
-  width: 500px;
-  height: 690px;
-}
-
-
-
-
 @media only screen and (max-width: 768px) {
-  .card {
-    margin-top: 10px;
-    margin-left: 0 !important;
-  }
 
 
   .navbar-brand{

@@ -106,13 +106,13 @@ if($_SESSION["role"] == "1") {
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th class="col-sm-1">No</th>
+                                                <th >No</th>
                                                 <?php if($role == "0") { ?>
-                                                <th class="col-sm-1">Aksi</th>
+                                                <th >Aksi</th>
                                                 <?php } ?>
-                                                <th class="col-sm-2">Kode Matakuliah</th>
-                                                <th class="col-sm-3">Nama Matakuliah</th>
-                                                <th class="col-sm-3">Jumlah SKS</th>
+                                                <th >Kode Matakuliah</th>
+                                                <th >Nama Matakuliah</th>
+                                                <th>Jumlah SKS</th>
                                             </tr>
                                         </thead>
                                         <?php $i=1; ?>

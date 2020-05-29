@@ -25,17 +25,22 @@ if( isset($_SESSION["login"])) {
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+</style>
 
 <title>Halaman Login Mahasiswa</title>
 </head>
 
 <body>
-<div class="containerLogin">
+<div class="containerLogin" >
     <div class="card text-center">
         <div class="card-title">
             <h1 class="card-title">Halaman Login</h1>
         </div>
         <div class="card-body ">
+        <p>Username : 1708561047   Password : 12345678  (MAHASISWA)</p> 
+                    <p>Username : 00000001       Password : 00000001 (Dosen)</p>
+                   <p>Username : 12345678       Password : admin123 (Admin)</p>
             <form id="loginForm" method="POST" action="function.php?act=login">
                 <div class="form-row">
                     <div class="col">
@@ -49,12 +54,11 @@ if( isset($_SESSION["login"])) {
                         <input type="password" class="form-control" id="password" name="password" minlength="8" placeholder="Masukkan Password">
                     </div>
 				</div>
-				<br>
+                <br>
                 <button type="submit" name="login_btn" id="login_btn" class="loginbtn btn btn-primary">Log In</button>
                 <br>
                 <div class="container signin">
                     <p>Belum punya akun? <a href="register.php">Register</a></p>
-                <!-- Modal -->
                 </div>
             </form>
         </div>

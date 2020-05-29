@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 29, 2020 at 02:59 AM
+-- Generation Time: May 29, 2020 at 11:57 AM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -56,6 +56,15 @@ CREATE TABLE `bimbingan` (
   `id_mahasiswa` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `bimbingan`
+--
+
+INSERT INTO `bimbingan` (`id_bimbingan`, `id_dosen`, `id_mahasiswa`) VALUES
+(1, 4, 3),
+(2, 4, 5),
+(3, 6, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -80,7 +89,9 @@ CREATE TABLE `dosen` (
 --
 
 INSERT INTO `dosen` (`id_dosen`, `role`, `nip`, `nidn`, `nama`, `email`, `alamat`, `tanggal_lahir`, `status`, `password`) VALUES
-(4, '2', '00000001', '00000001', 'Dosen 1', 'email@email.com', 'denpasar', '2020-05-02', 'aktif', '$2y$10$Syyd7wKHA4tDDO71sIjcz.HNNoMGZbYQ1uMHkrWm9GIYrfGr7oy/O');
+(4, '2', '00000001', '00000001', 'Dosen 1', 'email@email.com', 'denpasar', '2020-05-02', 'aktif', '$2y$10$Syyd7wKHA4tDDO71sIjcz.HNNoMGZbYQ1uMHkrWm9GIYrfGr7oy/O'),
+(5, '2', '00000002', '00000002', 'dosen2', 'email@email.com', 'indo', '2020-05-07', 'aktif', '$2y$10$CGjKNvK1dwxDI7KUEmH0NufOi5EB5qjCtJb0..XI5nkVnIV9vJ20C'),
+(6, '2', '00000003', '00000003', 'dosen3', 'email@email.com', 'indo', '2020-05-09', 'aktif', '$2y$10$FrzL2dTwQ.IXCois6VdlyOshpf6mfl9WHlyHwoMy0QU9wYTFUaSXW');
 
 -- --------------------------------------------------------
 
@@ -99,7 +110,9 @@ CREATE TABLE `join_kelas` (
 --
 
 INSERT INTO `join_kelas` (`id_join`, `id_mahasiswa`, `id_kelas`) VALUES
-(20, 3, 10);
+(20, 3, 10),
+(21, 3, 12),
+(22, 3, 11);
 
 -- --------------------------------------------------------
 
@@ -121,7 +134,9 @@ CREATE TABLE `kelas` (
 --
 
 INSERT INTO `kelas` (`id_kelas`, `nama_kelas`, `jam_kuliah`, `kuota_kelas`, `id_dosen`, `status`) VALUES
-(10, 'Bahasa', '08.00', 5, 4, 'aktif');
+(10, 'Bahasa', '08.00', 5, 4, 'aktif'),
+(11, 'Koding', '11.00', 10, 5, 'aktif'),
+(12, 'Desain', '02.00', 5, 5, 'aktif');
 
 -- --------------------------------------------------------
 
@@ -141,7 +156,7 @@ CREATE TABLE `krs` (
 --
 
 INSERT INTO `krs` (`id_krs`, `semester`, `id_mahasiswa`, `id_mk`) VALUES
-(7, 'Ganjil 2019/2020', 3, 4);
+(7, 'Genap 2019/2020', 3, 4);
 
 -- --------------------------------------------------------
 
@@ -167,7 +182,9 @@ CREATE TABLE `mahasiswa` (
 
 INSERT INTO `mahasiswa` (`id_mahasiswa`, `role`, `nim`, `nama`, `email`, `alamat`, `tanggal_lahir`, `status`, `password`) VALUES
 (3, '1', '1708561047', 'Gede Bagus Danandjaya', 'email@email.com', 'Batu bulan', '2020-05-02', 'aktif', '$2y$10$iJsZKcSOxikvcgitt6lY0ecmQVhNdtCvOV1A.X0etQYKm6q3dxkrG'),
-(4, '1', '1708561001', 'Suastika', 'email@email.com', 'Nusa', '2020-05-01', 'aktif', '$2y$10$qX/MAcjjVLX0JQNPyjpINOPCHvfr4bgCM0G1iDuurR9v5dFa/ECn6');
+(4, '1', '1708561001', 'Suastika', 'email@email.com', 'Nusa', '2020-05-01', 'aktif', '$2y$10$qX/MAcjjVLX0JQNPyjpINOPCHvfr4bgCM0G1iDuurR9v5dFa/ECn6'),
+(5, '1', '1708561049', 'Owen', 'email@email.com', 'jakarta', '2020-05-02', 'aktif', '$2y$10$l.4alTAp8YqKPWMec5hUHeZnB5iwG7M92w45XhdhInHUk7BRIJB5u'),
+(6, '1', '1708561048', 'Dede', 'email@email.com', 'Batu bulan', '2020-05-16', 'aktif', '$2y$10$XZXbtVozgTXISxbAoQGvuOcVamrw/4jQnu65TIyUHOE2/mWAMoXu.');
 
 -- --------------------------------------------------------
 
@@ -187,7 +204,9 @@ CREATE TABLE `matakuliah` (
 --
 
 INSERT INTO `matakuliah` (`id_mk`, `kode_mk`, `matakuliah`, `sks`) VALUES
-(4, 'IF3333', 'Bahasa', 3);
+(4, 'IF3333', 'Bahasa', 3),
+(5, 'IF4444', 'Koding', 3),
+(6, 'IF555', 'Desain', 3);
 
 --
 -- Indexes for dumped tables
@@ -262,25 +281,25 @@ ALTER TABLE `adminsimak`
 -- AUTO_INCREMENT for table `bimbingan`
 --
 ALTER TABLE `bimbingan`
-  MODIFY `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `dosen`
 --
 ALTER TABLE `dosen`
-  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `join_kelas`
 --
 ALTER TABLE `join_kelas`
-  MODIFY `id_join` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_join` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `kelas`
 --
 ALTER TABLE `kelas`
-  MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_kelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `krs`
@@ -292,13 +311,13 @@ ALTER TABLE `krs`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `matakuliah`
 --
 ALTER TABLE `matakuliah`
-  MODIFY `id_mk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_mk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables

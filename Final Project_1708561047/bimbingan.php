@@ -98,13 +98,13 @@ $role = $_SESSION['role'];
                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                             <thead>
                                                 <tr>
-                                                    <th class="col-sm-1">No</th>
+                                                    <th >No</th>
                                                     <?php if($role == "0") { ?>
                                                     <th>Aksi</th>
                                                     <?php } ?>
-                                                    <th class="col-sm-2">NIM</th>
-                                                    <th class="col-sm-4">Nama Mahasiswa</th>
-                                                    <th class="col-sm-3">Nama Pembimbing</th>
+                                                    <th >NIM</th>
+                                                    <th >Nama Mahasiswa</th>
+                                                    <th >Nama Pembimbing</th>
                                                 </tr>
                                             </thead>
                                             <?php $i=1;
